@@ -50,7 +50,7 @@ end
 #  INVOKE RAILS TEMPLATE
 
 app_dir = File.expand_path("../../spec/applications/#{app_name}/" + 'rails_' + rails_version.gsub('.', '-'), __FILE__)
-if File.exists?(app_dir)
+if File.exist?(app_dir)
   FileUtils.remove_dir(app_dir, true)
 end
 
